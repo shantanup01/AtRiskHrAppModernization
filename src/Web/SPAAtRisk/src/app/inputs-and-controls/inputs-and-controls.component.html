@@ -1,0 +1,167 @@
+<slb-card-group>
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Buttons</slb-card-subtitle>
+        </slb-card-header>
+        <div class="slb-card-content">
+            <div class="divContent">
+                <slb-button [classnames]="'icon-only'" [disabled]="false" [svgIcon]="'slb-icons:icon-add'"
+                    [iconBadge]="'primary'">
+                    Icon Button
+                </slb-button>
+
+                <slb-button [classnames]="'icon-only'" [disabled]="false" [svgIcon]="'slb-icons:icon-sun'"
+                    [iconBadge]="'primary'">
+                    Icon Button
+                </slb-button>
+
+                <slb-button [classnames]="'icon-only'" [disabled]="false" [svgIcon]="'slb-icons:icon-data-marker'"
+                    [iconBadge]="'primary'">
+                    Icon Button
+                </slb-button>
+            </div>
+
+            <div>
+                <slb-button id="primary-button" [classnames]="'primary full-width'" [disabled]="false">
+                    Primary Button
+                </slb-button>
+                <slb-button id="primary-button-disabled" [classnames]="'primary'" [disabled]="true">
+                    Primary Disabled Button
+                </slb-button>
+            </div>
+
+            <div style="padding-top: 20px">
+                <slb-button onclick="{console.log('I got clicked')}" [classnames]="'secondary'" [disabled]="false">
+                    Secondary Light Button
+                </slb-button>
+                <slb-button [classnames]="'secondary'" [disabled]="true">
+                    Secondary Disabled Button
+                </slb-button>
+            </div>
+
+            <div style="padding-top: 20px">
+                <slb-button [classnames]="'tertiary'" [disabled]="false">
+                    Tertiary Button
+                </slb-button>
+                <slb-button [classnames]="'tertiary'" [disabled]="true">
+                    Tertiary Disabled Button
+                </slb-button>
+            </div>
+        </div>
+    </slb-card>
+
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Checkbox</slb-card-subtitle>
+        </slb-card-header>
+
+        <div class="slb-card-content">
+            <slb-checkbox cmpId="checkbox1" label="option 1">Check me</slb-checkbox>
+
+            <slb-checkbox [disabled]="true" cmpId="checkbox2" label="option 1">You can't check me</slb-checkbox>
+        </div>
+    </slb-card>
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Radiobutton</slb-card-subtitle>
+        </slb-card-header>
+
+        <div class="slb-card-content">
+            <slb-radio-button-group [label]="label" [options]="rbgOtions"></slb-radio-button-group>
+        </div>
+    </slb-card>
+
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Numeric Input Control</slb-card-subtitle>
+        </slb-card-header>
+
+        <div class="slb-card-content">
+            <slb-numeric-input id="numeric-input" [inputValue]="1" [ratio]="1"></slb-numeric-input>
+        </div>
+    </slb-card>
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Datepicker</slb-card-subtitle>
+        </slb-card-header>
+
+        <div class="slb-card-content">
+            <slb-date-picker id="date-picker" [label]="'My Date'" format="MM/DD/YY" [value]="currentValue"
+                [minValue]="minValue" [maxValue]="maxValue">
+            </slb-date-picker>
+        </div>
+    </slb-card>
+</slb-card-group>
+<br>
+<slb-card-group>
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Dropdown</slb-card-subtitle>
+        </slb-card-header>
+        <div class="slb-card-content">
+            <slb-dropdown id="dropdown" label="Dropdown Options" [selectedOption]="dropdownOptions[0]">
+                <slb-option *ngFor="let option of dropdownOptions" [option]="option" [disabled]="option.disabled">
+                    {{option.label}}</slb-option>
+            </slb-dropdown>
+
+            <slb-dropdown id="dropdown-multi" label="Multi Select" [allowMultiple]="true"
+                [value]="[dropdownOptions[0]]">
+                <slb-option *ngFor="let option of dropdownOptions" [option]="option" [disabled]="option.disabled">
+                    {{option.label}}</slb-option>
+            </slb-dropdown>
+        </div>
+    </slb-card>
+
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Search Field</slb-card-subtitle>
+        </slb-card-header>
+        <div class="slb-card-content">
+            <div>
+                <slb-search-field-container [expanding]="true">
+                    <input slbSearchInput type="search" id="search123" name="search-input"
+                        placeholder="Expanding Search">
+                    <slb-icon svgIcon="slb-icons:icon-search"></slb-icon>
+                </slb-search-field-container>
+            </div>
+            <div>
+                <slb-search-field-container [expanding]="false">
+                    <input slbSearchInput type="search" id="search123" name="search-input" placeholder="Non Expanding">
+                    <slb-icon svgIcon="slb-icons:icon-search"></slb-icon>
+                </slb-search-field-container>
+            </div>
+        </div>
+    </slb-card>
+
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Slider</slb-card-subtitle>
+        </slb-card-header>
+
+        <div class="slb-card-content">
+            <slb-slider label="threshold" unit="%" isOneWay="false" min="0" max="100" start="10" end="90">
+            </slb-slider>
+        </div>
+    </slb-card>
+
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Tag</slb-card-subtitle>
+        </slb-card-header>
+
+        <div class="slb-card-content">
+            <slb-tag text="TAG!!"></slb-tag>
+        </div>
+    </slb-card>
+
+    <slb-card>
+        <slb-text-input-container [label]="'Color picker'">
+            <input slbTextInput [(ngModel)]="color" [slbPopoverTriggerFor]="clrPopover" slbPopoverTrigger="click"/>
+        </slb-text-input-container>
+        <slb-icon [ngStyle]="{'color': color}" svgIcon="slb-icons:icon-image"></slb-icon>
+        <slb-popover #clrPopover>
+            <slb-color-picker (colorSelected)="color = '#'+ $event.color.toHexString()" [showBorder]="false"></slb-color-picker>
+        </slb-popover>
+    </slb-card>
+
+</slb-card-group>

@@ -1,0 +1,39 @@
+
+<div class="individual-card">
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Modal</slb-card-subtitle>
+        </slb-card-header>
+        <slb-button id="toggle-button" [classnames]="'primary'" [disabled]="false" modalOperation="open" [modalId]="modalId">
+            Open Modal
+        </slb-button>
+        <slb-modal id="test-modal" [modalId]="modalId" [title]="title">
+            slb-modal content
+        </slb-modal>
+    </slb-card>
+</div>
+    
+<div class="individual-card">
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>Tooltips</slb-card-subtitle>
+        </slb-card-header>
+    
+        <div class="slb-card-content">
+            <ul>
+            <li>
+                <span slbTooltip="tooltip at top" position="top"><a target="_blank" rel="noopener">Top Tooltip</a></span>
+            </li>
+            <li>
+                <span slbTooltip="tooltip at bottom" position="bottom"><a target="_blank" rel="noopener">Bottom Tooltip</a></span>
+            </li>
+            <li>
+                <span slbTooltip="tooltip at right side." position="right"><a target="_blank" rel="noopener">Right Tooltip</a></span>
+            </li>
+            <li>
+                <span slbTooltip="tooltip is displayed at right as there is no space at left side" position="left"><a target="_blank" rel="noopener">Left Tooltip</a></span>
+            </li>
+            </ul>
+        </div>
+    </slb-card>
+</div>

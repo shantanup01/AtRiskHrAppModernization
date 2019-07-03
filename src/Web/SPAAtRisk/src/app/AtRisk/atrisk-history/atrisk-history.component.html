@@ -1,0 +1,101 @@
+<slb-project-detail>
+    
+  
+    <div content>
+    
+            
+                <div >
+                        <slb-data-table 
+                            [tableContentList]="stubTableContent" 
+                            [tableConfig]="tableConfig" 
+                            tableTitle="@Risk History">
+                            <slb-data-table-title-container>
+                                <ng-template #dataTableHead>                                    
+                                </ng-template>
+                            </slb-data-table-title-container>
+                            <slb-data-table-column 
+                                property="ID" 
+                                width="0.3" 
+                                headerTitle="ID" 
+                                sortDirection="" 
+                                sortable="true" 
+                                dataDirection="left" 
+                                isVisible="false">
+                            </slb-data-table-column>
+                            <slb-data-table-column 
+                                property="gin" 
+                                width="0.3" 
+                                headerTitle="GIN" 
+                                sortDirection="" 
+                                sortable="true" 
+                                dataDirection="Left" 
+                                isVisible="true">
+                            </slb-data-table-column>
+                            <slb-data-table-column 
+                            property="begindate" 
+                            width="0.3" 
+                            headerTitle="Begin Date" 
+                            sortDirection="" 
+                            sortable="true" 
+                            dataDirection="right" 
+                            isVisible="true">
+                        </slb-data-table-column>
+                        <slb-data-table-column 
+                        property="changetype" 
+                        width="0.3" 
+                        headerTitle="Change Type" 
+                        sortDirection="" 
+                        sortable="true" 
+                        dataDirection="right" 
+                        isVisible="true">
+                    </slb-data-table-column>
+                    <slb-data-table-column 
+                    property="lastchange" 
+                    width="0.3" 
+                    headerTitle="Last Change" 
+                    sortDirection="" 
+                    sortable="true" 
+                    dataDirection="right" 
+                    isVisible="true">
+                </slb-data-table-column>
+                <slb-data-table-column 
+                property="lastchangerole" 
+                width="0.3" 
+                headerTitle="Last Change Role" 
+                sortDirection="" 
+                sortable="true" 
+                dataDirection="right" 
+                isVisible="true">
+            </slb-data-table-column>
+            <slb-data-table-column 
+                property="before" 
+                width="0.3" 
+                headerTitle="Before" 
+                sortDirection="" 
+                sortable="true" 
+                dataDirection="right" 
+                isVisible="true">
+            </slb-data-table-column>
+            <slb-data-table-column 
+                property="after" 
+                width="0.3" 
+                headerTitle="After" 
+                sortDirection="" 
+                sortable="true" 
+                dataDirection="right" 
+                isVisible="true">
+            </slb-data-table-column>
+                    
+                           
+                            <slb-data-table-footer-container>
+                                    <ng-template #slbTableFooter>
+                                      
+                                    </ng-template>
+                            </slb-data-table-footer-container>
+                        </slb-data-table>
+                    </div>
+         
+
+        
+    </div>
+</slb-project-detail>

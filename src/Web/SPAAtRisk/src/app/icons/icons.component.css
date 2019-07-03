@@ -1,0 +1,19 @@
+.icon-card {
+    padding: 0px 20px 20px 20px;
+}
+
+.icon-card .slb-card-content {
+    overflow: auto;
+    height: 500px;
+}
+
+.icon-card .slb-card-content div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.icon-card .slb-card-content div div {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}

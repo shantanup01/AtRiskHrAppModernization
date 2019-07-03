@@ -1,0 +1,95 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\proj\\admin\\GitRepos\\Projects\\AtRiskModernization\\src\\Microservices\\AtRiskHistory\\AtRiskHistory.API\\AtRiskHistory.API.csproj": {}
+  },
+  "projects": {
+    "C:\\proj\\admin\\GitRepos\\Projects\\AtRiskModernization\\src\\Microservices\\AtRiskHistory\\AtRiskHistory.API\\AtRiskHistory.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\proj\\admin\\GitRepos\\Projects\\AtRiskModernization\\src\\Microservices\\AtRiskHistory\\AtRiskHistory.API\\AtRiskHistory.API.csproj",
+        "projectName": "AtRiskHistory.API",
+        "projectPath": "C:\\proj\\admin\\GitRepos\\Projects\\AtRiskModernization\\src\\Microservices\\AtRiskHistory\\AtRiskHistory.API\\AtRiskHistory.API.csproj",
+        "packagesPath": "C:\\Users\\SMishra24\\.nuget\\packages\\",
+        "outputPath": "C:\\proj\\admin\\GitRepos\\Projects\\AtRiskModernization\\src\\Microservices\\AtRiskHistory\\AtRiskHistory.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\SMishra24\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Google.Apis.DLP.v2": {
+              "target": "Package",
+              "version": "[1.40.2.1618, )"
+            },
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Cors": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.7.9, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}

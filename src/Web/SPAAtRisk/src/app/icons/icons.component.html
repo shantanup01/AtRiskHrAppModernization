@@ -1,0 +1,29 @@
+<div class="individual-card">
+    <slb-card>
+        <slb-card-header>
+            <slb-card-subtitle>User Identity</slb-card-subtitle>
+        </slb-card-header>
+    
+        <div class="slb-card-content">
+            <slb-user-identity [photoUrl]="'./assets/jean-pate.jpg'"></slb-user-identity>
+            <slb-user-identity></slb-user-identity>
+        </div>
+    </slb-card>
+</div>
+
+<div class="icon-card">
+    <slb-card>
+      <slb-card-header>
+          <slb-card-subtitle>Default Icons - slb-icons</slb-card-subtitle>
+      </slb-card-header>
+  
+      <div class="slb-card-content">
+          <div *ngFor="let icon of icons">
+              <div>  
+                <slb-icon svgIcon="{{namespace + ':' + icon.id}}"></slb-icon>
+                {{ icon.id }}
+              </div>
+            </div>
+      </div>
+    </slb-card>
+</div>

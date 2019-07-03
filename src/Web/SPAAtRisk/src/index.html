@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SLB DLS Angular Boilerplate</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+
+  <!--
+    DLS variable modes for light and dark
+
+    Groups of links with the same `title` attribute are automatically combined
+    into one style sheet. Use `rel="stylesheet"` for the default theme links,
+    and `rel="alternate stylesheet"` to specify alternate theme files that can
+    be enabled through user preference – either via the browser or through code.
+
+    Disabling and enabling style sheets with `title` attributes controls which
+    theme is picked. For a reference implementation of a style sheet switcher,
+    see `app/services/theme-switcher.service.ts`
+  -->
+  <link rel="stylesheet" type="text/css" title="Light theme (default)" href="/assets/styles/css-var-mode-light.css" />
+  <link rel="alternate stylesheet" type="text/css" title="Dark theme" href="/assets/styles/css-var-mode-dark.css" />
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>

@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(../node_modules/@slb-dls/vanilla/assets/styles/global-mode-light.css);
+@import url(../node_modules/@slb-dls/vanilla/panel-list/panel-list-mode-light.compiled.css);
+@import "~@angular/cdk/overlay-prebuilt.css";
+/* The DLS’ `var-mode` style sheets are linked in the HTML to allow for theme switching */
+
+.divContent {
+  padding: 10px;
+  display: flex;
+}
+
+.iconsContainer {
+  display: inline-block;
+}
+
+#sub-nav-button-tab, #sub-nav-misc-tab {
+  margin: 20px;
+  margin: 20px;
+}
+
+slb-card-group {
+  padding: 10px;
+}
+
+.individual-card {
+  display: inline-table;
+  width: 50px;
+  padding: 20px
+}
+
+.mock-tab-content {
+  display: block;
+  background-color: var(--color-container-background);
+  border: 1px solid var(--color-container-border);
+  border-radius: 5px;
+  font-family: Roboto,sans-serif;
+  letter-spacing: .03em;
+  font-size: 44.8px;
+  font-size: 2.8rem;
+  line-height: 54.4px;
+  line-height: 3.4rem;
+  font-weight: 900;
+  color: var(--color-project-specific-content);
+  padding: 30px;
+  margin: 50px 0 0;
+  height: 280px;
+}

@@ -1,0 +1,177 @@
+<slb-project-detail>
+    <div panel-list>
+        <slb-panel-list [title]="'Panel List'">
+            <ul panel-content>
+                <li>List Item One</li>
+                <li>List Item Two</li>
+                <li>List Item Three</li>
+                <li>List Item Four</li>
+                <li>List Item Five</li>
+                <li>List Item Six</li>
+                <li>List Item Seven</li>
+                <li>List Item Eight</li>
+                <li>List Item Nine</li>
+                <li>List Item Ten</li>
+            </ul>
+        </slb-panel-list>
+    </div>
+    <div content>
+        <slb-card-group>
+            <slb-card>
+                <slb-card-header>
+                    <slb-card-subtitle>Tab Control (Iconic)</slb-card-subtitle>
+                </slb-card-header>
+                <slb-tab-control name="demoTab">
+                    <tab tabTitle="Tab 1" [disabled]="true" [svgIcon]="'slb-icons:icon-list-view'">
+                        <div class="mock-tab-content" id="list-view">
+                            List View
+                        </div>
+                    </tab>
+
+                    <tab tabTitle="Tab 2" [svgIcon]="'slb-icons:icon-grid-view'">
+                        <div class="mock-tab-content" id="grid-view">
+                            Card View
+                        </div>
+                    </tab>
+
+                    <tab tabTitle="Tab 3" [svgIcon]="'slb-icons:icon-map'">
+                        <div class="mock-tab-content" id="map-view">
+                            Map View
+                        </div>
+                    </tab>
+                </slb-tab-control>
+            </slb-card>
+            <slb-card>
+                <slb-card-header>
+                    <slb-card-subtitle>Tab Control (Text Only)</slb-card-subtitle>
+                </slb-card-header>
+                <slb-tab-control-text-only name="demoTabTextOnly">
+                    <tab label="Tab 1">
+                        <div class="mock-tab-content" id="list-view">
+                            Tab 1 View
+                        </div>
+                    </tab>
+
+                    <tab label="Tab 2" [active]="true">
+                        <div class="mock-tab-content" id="grid-view">
+                            Tab 2 View
+                        </div>
+                    </tab>
+
+                    <tab label="Tab 3">
+                        <div class="mock-tab-content" id="map-view">
+                            Tab 3 View
+                        </div>
+                    </tab>
+                </slb-tab-control-text-only>
+            </slb-card>
+            <slb-card>
+                <slb-card-header>
+                    <slb-card-subtitle>Pagination Control</slb-card-subtitle>
+                </slb-card-header>
+
+                <slb-pagination-control [refreshPagination]="refreshPagination" [perPageResultsCount]="1" [totalResultsCount]="10">
+                </slb-pagination-control>
+                <br>
+                <slb-pagination-control [perPageResultsCount]="0" [totalResultsCount]="">
+                </slb-pagination-control>
+            </slb-card>
+            <slb-card>
+                <slb-card-header>
+                    <slb-card-subtitle>Carousel</slb-card-subtitle>
+                </slb-card-header>
+                <div class="slb-card-content">
+                    <div style="width: 600px">
+                        <slb-carousel [showControls]="true">
+                            <ng-template slbSlide>
+                                <slb-card-group>
+                                    <slb-card>
+                                        <img src="/assets/images/img1.jpeg" alt="First slide">
+                                    </slb-card>
+                                </slb-card-group>
+                            </ng-template>
+
+                            <ng-template slbSlide>
+                                <slb-card-group>
+                                    <slb-card>
+                                        <img src="/assets/images/img2.jpeg" alt="Second slide">
+                                    </slb-card>
+                                </slb-card-group>
+                            </ng-template>
+
+                            <ng-template slbSlide>
+                                <slb-card-group>
+                                    <slb-card>
+                                        <img src="/assets/images/img3.jpeg" alt="Third slide">
+                                    </slb-card>
+                                </slb-card-group>
+                            </ng-template>
+                        </slb-carousel>
+                    </div>
+                </div>
+            </slb-card>
+
+            <slb-card>
+                <slb-card-header>
+                    <slb-card-subtitle>Nested List</slb-card-subtitle>
+                </slb-card-header>
+
+                <slb-nested-list title="List Title" [content]="nestedListContent"></slb-nested-list>
+            </slb-card>
+
+            <slb-card>
+                <slb-card-header>
+                    <slb-card-subtitle>Data Table</slb-card-subtitle>
+                </slb-card-header>
+                <div style="width: 600px;">
+                        <slb-data-table 
+                            [tableContentList]="stubTableContent" 
+                            [tableConfig]="tableConfig" 
+                            tableTitle="Subscriptions">
+                            <slb-data-table-title-container>
+                                <ng-template #dataTableHead>                                    
+                                </ng-template>
+                            </slb-data-table-title-container>
+                            <slb-data-table-column 
+                                property="row1" 
+                                width="0.3" 
+                                headerTitle="Test1" 
+                                sortDirection="" 
+                                sortable="true" 
+                                dataDirection="left" 
+                                isVisible="true">
+                            </slb-data-table-column>
+                            <slb-data-table-column 
+                                property="data" 
+                                width="0.3" 
+                                headerTitle="Test2" 
+                                sortDirection="" 
+                                sortable="true" 
+                                dataDirection="right" 
+                                isVisible="true">
+                            </slb-data-table-column>
+                    
+                            <slb-data-table-column 
+                                dataDirection="center" 
+                                width="0.4" 
+                                headerTitle="" 
+                                sortable="false" 
+                                sortDirection="" 
+                                isVisible="true">
+                                <ng-template #slbTableCell let-item="item">
+                                    <slb-button>Accept</slb-button>                
+                                    <slb-button [classnames]="'secondary'">Decline</slb-button>
+                                </ng-template>
+                            </slb-data-table-column>
+                            <slb-data-table-footer-container>
+                                    <ng-template #slbTableFooter>
+                                        <slb-button>Accept</slb-button>
+                                    </ng-template>
+                            </slb-data-table-footer-container>
+                        </slb-data-table>
+                    </div>
+            </slb-card>
+
+        </slb-card-group>
+    </div>
+</slb-project-detail>

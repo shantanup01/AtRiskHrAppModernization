@@ -1,0 +1,32 @@
+<slb-navigation-framework [mode]="mode">
+    <slb-toolbar>
+        <span class="brand-container">
+          <!-- DIV for if branding is used -->
+        </span>
+
+        <span class="flex-fill-space"></span>
+
+        <span class="button-container">
+          <button aria-label="Button with text: Launch Screen" class="slb-button icon-only">
+                  <slb-icon svgIcon="slb-icons:icon-launch"></slb-icon>
+          </button>
+          <button aria-label="Button with text: Notifications" class="slb-button icon-only open-nav-dropdown">
+                          <slb-icon svgIcon="slb-icons:icon-notification"></slb-icon>
+          </button>
+        </span>
+      </slb-toolbar>
+  <slb-menu-container>
+
+
+
+  </slb-menu-container>
+
+  <slb-framework-content-view>
+    <div class="heading-container">
+      <div class="heading">
+        <h2>Human Resource Apps</h2>
+      </div>
+    </div>
+    <router-outlet role="main"></router-outlet>
+  </slb-framework-content-view>
+</slb-navigation-framework>

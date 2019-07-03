@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  padding: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  margin-bottom: 20px;
+}

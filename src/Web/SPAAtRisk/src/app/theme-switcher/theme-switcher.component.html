@@ -1,0 +1,28 @@
+<div class="card-wrapper">
+  <slb-card>
+    <slb-card-header>
+      <slb-card-title>User preferences</slb-card-title>
+      <slb-card-subtitle>Theme selection</slb-card-subtitle>
+    </slb-card-header>
+    <div class="slb-card-content">
+      <slb-dropdown
+        id="dropdown"
+        label="Select theme"
+        [selectedOption]="currentTheme"
+        (selectionChange)="selectTheme($event)"
+      >
+        <slb-option *ngFor="let theme of themes" [option]="theme">
+          {{theme}}
+        </slb-option>
+      </slb-dropdown>
+    </div>
+  </slb-card>
+</div>
+
+<div>
+  A color reference for your custom components can be found at
+  <a href="https://dev.azure.com/slb-swt/DLS/_git/dls-color-reference">
+    the dls-color-reference
+  </a>
+  repository.
+</div>
